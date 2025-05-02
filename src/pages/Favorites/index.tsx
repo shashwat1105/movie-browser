@@ -19,6 +19,7 @@ const Favorites = () => {
   <ArrowLeft size={20} /> Back
 </button>
       <h1 className={styles.title}>Your Favorite Movies</h1>
+      <div/>
     </div>
       
       {favorites.length === 0 ? (
