@@ -15,7 +15,7 @@ export const useMovies = (initialQuery: string = '') => {
     const fetchMovies = async () => {
       try {
         setLoading(true);
-        const queryToUse = searchQuery.trim() || 'movie'; // Default search term
+        const queryToUse = searchQuery.trim() || 'movie'; 
         const data = await searchMovies(queryToUse, currentPage);
         
         if (data.Response === 'True') {
@@ -27,6 +27,7 @@ export const useMovies = (initialQuery: string = '') => {
           setError(data.Error || 'No results found');
         }
       } catch (err) {
+        console.log("error",err);
         setError('Failed to fetch movies');
         setMovies([]);
       } finally {

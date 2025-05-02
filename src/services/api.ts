@@ -14,7 +14,7 @@ export const searchMovies = async (
     if (!response.ok) throw new Error('Network response was not ok');
     const data = await response.json();
     
-    // Handle default search case
+
     if (query === 'movie' && data.Response === 'False') {
       return {
         ...data,
