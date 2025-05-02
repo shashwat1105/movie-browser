@@ -1,0 +1,23 @@
+.favoriteButton {
+    background: transparent;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  .favoriteButton:hover {
+    color: var(--error-color);
+  }
+  
+  .favoriteButton.favorited {
+    color: white;
+    background-color: var(--error-color);
+  }
+  
+  .favoriteButton.favorited:hover {
+    color: var(--text-secondary);
+  }

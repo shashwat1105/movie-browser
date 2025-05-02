@@ -1,0 +1,25 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .icon {
+    color: var(--error-color);
+    margin-bottom: 20px;
+  }
+  
+  .homeLink {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  
+  .homeLink:hover {
+    background: #1a4a7a;
+  }

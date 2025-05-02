@@ -1,0 +1,60 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+    padding: 20px 0;
+  }
+  
+  .pageNumber {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+  }
+  
+  .pageNumber:hover {
+    background: rgba(15, 52, 96, 0.2);
+  }
+  
+  .pageNumber.active {
+    background: var(--accent-color);
+    color: white;
+  }
+  
+  .arrow {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+  }
+  
+  .arrow:hover:not(:disabled) {
+    background: rgba(15, 52, 96, 0.2);
+  }
+  
+  .arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }

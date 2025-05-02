@@ -1,0 +1,26 @@
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .icon {
+    color: var(--error-color);
+    margin-bottom: 20px;
+  }
+  
+  .reloadButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  
+  .reloadButton:hover {
+    background: #1a4a7a;
+  }
