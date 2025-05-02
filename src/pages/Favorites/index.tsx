@@ -5,7 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Favorites = () => {
-  const { favorites, removeFavorite } = useFavorites();
+  const { favorites} = useFavorites();
   const navigate=useNavigate();
 
   return (
@@ -31,9 +31,9 @@ const Favorites = () => {
             <MovieCard
               key={movie.imdbID}
               movie={movie}
-              onClick={() => {
-                window.location.href = `/movie/${movie.imdbID}`;
-              }}
+              // onClick={() => {
+              //   window.location.href = `/movie/${movie.imdbID}`;
+              // }}
             />
           ))}
         </div>
